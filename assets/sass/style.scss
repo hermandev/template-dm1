@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-primary {
+  background-color: #2d3436;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .navbar-left {
+    img {
+      top: 15px;
+      position: absolute;
+      width: 170px;
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: baseline;
+    padding-top: 10px;
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        list-style: none;
+        margin-right: 10px;
+        transition: 0.3s ease-in;
+
+        &:hover {
+          a {
+            color: #e74c3c;
+          }
+        }
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+          transition: 0.3s ease-out;
+        }
+      }
+    }
+
+    .search {
+      display: flex;
+      position: relative;
+      input {
+        border: 0;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 20px;
+        width: 150px;
+        font-size: 14px;
+        transition: 0.2s ease-out;
+
+        &:focus {
+          width: 300px;
+          transition: 0.2s ease-in;
+        }
+      }
+
+      svg {
+        position: absolute;
+        width: 20px;
+        top: 5px;
+        right: 5px;
+      }
+    }
+  }
+}
+
+.navbar-social-media {
+  margin-top: 15px;
+  .social-right {
+    text-align: right;
+    ul {
+      li {
+        list-style: none;
+        display: inline-block;
+        a {
+          &:hover {
+            transition: all ease-in 0.2s;
+            .fa-facebook-square {
+              transition: all ease-in 0.2s;
+              color: #4267b2;
+            }
+
+            .fa-twitter-square {
+              transition: all ease-in 0.2s;
+              color: #1da1f3;
+            }
+
+            .fa-instagram {
+              transition: all ease-in 0.2s;
+              color: #d82966;
+            }
+
+            .fa-whatsapp {
+              transition: all ease-in 0.2s;
+              color: #51c85e;
+            }
+
+            .fa-youtube {
+              transition: all ease-in 0.2s;
+              color: #f70000;
+            }
+          }
+
+          svg {
+            transition: all ease-in 0.2s;
+            width: 33px;
+            color: #7f8c8d;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-secondary {
+  .navbar-bg-secondary {
+    background-color: #2d3436;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    ul {
+      padding: 0px;
+      width: 100%;
+      overflow: hidden;
+      li {
+        list-style: none;
+        display: inline-block;
+        transition: 0.2s ease-in;
+
+        &:hover {
+          a {
+            color: #e74c3c;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          color: #fff;
+          width: 100%;
+          transition: 0.2s ease-out;
+        }
+      }
+    }
+  }
+}
+
+.news-slider {
+  margin-top: 15px;
+
+  .slider-left {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .carousel-caption {
+      //   width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 5px 5px 50px 10px;
+      margin-bottom: 30px;
+      background-color: #2d3436d8;
+      text-align: left;
+
+      h1 {
+        border-top: 2px solid #e74c3c;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+  }
+
+  .slider-right {
+    padding-right: 0px;
+
+    .slider-right-round {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+main {
+  margin-top: 30px;
+  .container {
+    .main-left {
+      padding: 0px;
+    }
+    .main-right {
+      padding-right: 0px;
+    }
+  }
+}
+
+.title-head {
+  position: relative;
+  border-top: 3px solid #e7e7e7;
+  margin-bottom: 20px;
+  span {
+    background-color: #fff;
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+}
+
+.card-berita {
+  margin-bottom: 20px;
+  .cards {
+    display: flex;
+    // max-height: 200px;
+
+    .card-img {
+      width: 400px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .card-desc {
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      .meta-berita {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: #7f8c8d;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+      }
+
+      h1 {
+        font-size: 1rem;
+        font-weight: bold;
+        &:hover {
+          a {
+            color: #e74c3c;
+            text-decoration: none;
+          }
+        }
+        a {
+          color: #2d3436;
+          text-decoration: none;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+
+.iklan-home {
+    background-color: #2d3436;
+    padding: 10px;
+}
+
+footer {
+    background-color: #2d3436;
+    padding: 10px;
+    color: #FFF;
+    font-size: .8rem;
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-right {
+    display: none;
+  }
+
+  .title-head {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card-berita {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .cards {
+      .card-desc {
+        .meta-berita {
+          font-size: 0.6rem;
+          font-style: italic;
+          color: #7f8c8d;
+          position: absolute;
+          bottom: 0;
+          left: 10px;
+        }
+
+        h1 {
+          font-size: 0.8em;
+          font-weight: bold;
+          &:hover {
+            a {
+              color: #e74c3c;
+              text-decoration: none;
+            }
+          }
+          a {
+            color: #2d3436;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
